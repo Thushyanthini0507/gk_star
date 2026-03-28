@@ -33,14 +33,14 @@ export default function Home() {
           <div className="services-grid">
             <div className="service-card">
               <img
-                src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                 alt="Tailoring"
                 className="service-img"
               />
               <div className="service-content">
                 <i className="fas fa-cut service-icon"></i>
-                <h3>Tailoring & Fashion</h3>
-                <p>Custom-fit outfits and alterations by expert local tailors.</p>
+                <h3>Tailoring Services</h3>
+                <p>Blouse stitching, customized designs, and bridal blouse work by experts.</p>
                 <Link href="/services" className="btn btn-secondary">
                   View Details
                 </Link>
@@ -49,14 +49,14 @@ export default function Home() {
 
             <div className="service-card">
               <img
-                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Beauty"
+                src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Aari Work"
                 className="service-img"
               />
               <div className="service-content">
-                <i className="fas fa-spa service-icon"></i>
-                <h3>Beauty & Makeup</h3>
-                <p>Professional makeup artists and beauty treatments for any event.</p>
+                <i className="fas fa-magic service-icon"></i>
+                <h3>Aari Work</h3>
+                <p>Exquisite bridal Aari designs and professional embroidery embroidery classes.</p>
                 <Link href="/services" className="btn btn-secondary">
                   View Details
                 </Link>
@@ -65,14 +65,14 @@ export default function Home() {
 
             <div className="service-card">
               <img
-                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Photography"
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Designing"
                 className="service-img"
               />
               <div className="service-content">
-                <i className="fas fa-camera service-icon"></i>
-                <h3>Photography</h3>
-                <p>Capturing your beautiful moments with high-quality cameras.</p>
+                <i className="fas fa-palette service-icon"></i>
+                <h3>Designing Services</h3>
+                <p>Professional logo design, visiting cards, and social media branding.</p>
                 <Link href="/services" className="btn btn-secondary">
                   View Details
                 </Link>

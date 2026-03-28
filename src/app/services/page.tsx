@@ -6,45 +6,73 @@ export default function ServicesPage() {
   const servicesData = [
     {
       id: 1,
-      title: "Plumbing Services",
-      description: "Expert plumbing solutions for residential and commercial properties. From leak repairs to full installations.",
-      icon: "fas fa-tint",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Tailoring Services",
+      description: "Blouse stitching, Saree fall & pico, Custom designs, and Bridal blouse work.",
+      icon: "fas fa-cut",
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 2,
-      title: "Electrical Work",
-      description: "Certified electricians answering your every need. Lighting, wiring, panel upgrades, and emergency services.",
-      icon: "fas fa-bolt",
-      image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Aari Work Services",
+      description: "Bridal Aari work, Custom embroidery, and Aari work classes for all levels.",
+      icon: "fas fa-magic",
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 3,
-      title: "Carpentry & Woodwork",
-      description: "Custom carpentry, furniture repair, and comprehensive woodworking services by skilled artisans.",
-      icon: "fas fa-hammer",
-      image: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Beauty & Makeup",
+      description: "Bridal makeup, Party makeup, Facials, Manicure, and Eyebrow threading.",
+      icon: "fas fa-sparkles",
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 4,
-      title: "Home Cleaning",
-      description: "Thorough, reliable, and detailed home and office cleaning services tailored to your schedule.",
-      icon: "fas fa-broom",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Hair Cutting & Salon",
+      description: "Ladies & Men's haircut, styling, treatments, coloring, and straightening.",
+      icon: "fas fa-user-tie",
+      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 5,
-      title: "Painting Services",
-      description: "Transform your spaces with our premium interior and exterior painting solutions.",
-      icon: "fas fa-paint-roller",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Designing Services",
+      description: "Logo, Visiting cards, Posters, Social media, and Banner designing.",
+      icon: "fas fa-palette",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
       id: 6,
-      title: "Appliance Repair",
-      description: "Fast and reliable repair services for all your major household appliances. We get it working again.",
-      icon: "fas fa-tools",
-      image: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      title: "Photography & Camera",
+      description: "Event photography, Wedding/Birthday shoots, and Camera rental services.",
+      icon: "fas fa-camera",
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 7,
+      title: "Cake Services",
+      description: "Customized Birthday, Wedding, and Themed cakes for all your special occasions.",
+      icon: "fas fa-birthday-cake",
+      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 8,
+      title: "Vehicle Services",
+      description: "Professional vehicle hiring and rental services for all your travel needs.",
+      icon: "fas fa-car",
+      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 9,
+      title: "Poultry Services",
+      description: "Fresh chicken sales, Bulk chicken supply, and comprehensive Farm services.",
+      icon: "fas fa-drumstick-bite",
+      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 10,
+      title: "Panthal Services",
+      description: "Premium panthal and decoration services for weddings, parties, and events.",
+      icon: "fas fa-campground",
+      image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     }
   ];
 
