@@ -1,158 +1,159 @@
-"use client";
-
 import Link from "next/link";
-import './services.css';
+import Image from "next/image";
 
 export default function ServicesPage() {
   const servicesData = [
     {
       id: 1,
       title: "Tailoring Services",
-      description: "Blouse stitching, Saree fall & pico, Custom designs, and Bridal blouse work.",
+      description: "Bespoke stitching, Saree fall & pico, and bridal blouse work by master tailors.",
       icon: "fas fa-cut",
-      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 2,
       title: "Aari Work Services",
-      description: "Bridal Aari work, Custom embroidery, and Aari work classes for all levels.",
+      description: "Traditional bridal Aari designs and professional embroidery embroidery craftsmanship.",
       icon: "fas fa-magic",
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 3,
       title: "Beauty & Makeup",
-      description: "Bridal makeup, Party makeup, Facials, Manicure, and Eyebrow threading.",
+      description: "Luxury bridal makeup, party styling, and professional skin treatments.",
       icon: "fas fa-sparkles",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 4,
       title: "Hair Cutting & Salon",
-      description: "Ladies & Men's haircut, styling, treatments, coloring, and straightening.",
+      description: "Premium hair styling, treatments, and coloring for ladies and gentlemen.",
       icon: "fas fa-user-tie",
-      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 5,
       title: "Designing Services",
-      description: "Logo, Visiting cards, Posters, Social media, and Banner designing.",
+      description: "Visual identity, logo design, and professional business branding solutions.",
       icon: "fas fa-palette",
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 6,
       title: "Photography & Camera",
-      description: "Event photography, Wedding/Birthday shoots, and Camera rental services.",
+      description: "Cinematic event coverage, wedding shoots, and professional camera rentals.",
       icon: "fas fa-camera",
-      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      id: 7,
-      title: "Web Design",
-      description: "Professional website design, landing pages, and online store development.",
-      icon: "fas fa-laptop-code",
-      image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 8,
       title: "Cake Services",
-      description: "Customized Birthday, Wedding, and Themed cakes for all your special occasions.",
+      description: "Customized designer cakes for weddings, birthdays, and grand celebrations.",
       icon: "fas fa-birthday-cake",
-      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 9,
       title: "Vehicle Services",
-      description: "Professional vehicle hiring and rental services for all your travel needs.",
+      description: "Luxury vehicle rentals and professional transport services for all events.",
       icon: "fas fa-car",
-      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 10,
       title: "Poultry Services",
-      description: "Fresh chicken sales, Bulk chicken supply, and comprehensive Farm services.",
+      description: "Fresh high-quality poultry supply and comprehensive farm solutions.",
       icon: "fas fa-drumstick-bite",
-      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&q=80&w=800"
     },
     {
       id: 11,
       title: "Panthal Services",
-      description: "Premium panthal and decoration services for weddings, parties, and events.",
+      description: "Elegant event panthal setup and traditional decoration services.",
       icon: "fas fa-campground",
-      image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
   return (
-    <>
-      <div className="page-header" style={{ backgroundColor: "var(--text-dark)", color: "var(--text-light)", padding: "100px 0", textAlign: "center", position: "relative", overflow: "hidden" }}>
-        
-        {/* Subtle background pattern overlay */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, opacity: 0.1, backgroundImage: "url('https://www.transparenttextures.com/patterns/stardust.png')" }}></div>
-        
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
-          <h1 style={{ color: "var(--primary-color)", fontSize: "3.5rem", marginBottom: "20px", fontFamily: "var(--font-heading)", WebkitFontSmoothing: "antialiased" }}>
-            Our Premium Services
+    <div className="bg-[#000000] text-white min-h-screen">
+      {/* Luxury Header */}
+      <section className="relative py-32 md:py-48 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920"
+          alt="Services Overview"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+        <div className="container relative z-10 px-6 text-center">
+          <span className="text-primary-color text-[10px] font-black uppercase tracking-[0.4em] mb-4 block">Our Expertise</span>
+          <h1 className="text-5xl md:text-8xl font-black mb-8 leading-none tracking-tighter" style={{ fontFamily: "var(--font-heading)" }}>
+            Our <span className="text-primary-color">Premium</span> Services
           </h1>
-          <p style={{ fontSize: "1.2rem", maxWidth: "650px", margin: "0 auto", color: "#e0e0e0", fontWeight: 300 }}>
-            Discover the wide array of top-tier professional services we offer at GK Star. 
-            Quality craftsmanship paired with unmatched reliability.
+          <p className="text-lg md:text-xl text-neutral-400 font-light max-w-2xl mx-auto leading-relaxed">
+            Discover a world of professional excellence. From bespoke craftsmanship to event management, we bring your vision to life with luxury and precision.
           </p>
         </div>
-      </div>
+      </section>
 
-      <section className="section-padding" style={{ backgroundColor: "var(--bg-light)" }}>
-        <div className="container services-premium-container">
-          
-          <div className="text-center mb-16">
-            <h2 className="section-title" style={{ fontFamily: "var(--font-heading)", color: "var(--secondary-color)" }}>Explore What We Do</h2>
-            <div style={{ height: "3px", width: "80px", backgroundColor: "var(--primary-color)", margin: "0 auto 20px" }}></div>
-            <p style={{ color: "#666", maxWidth: "700px", margin: "0 auto", fontSize: "1.1rem" }}>
-              We bring convenience and excellence to your doorstep. Browse our most requested services below.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* Services Grid */}
+      <section className="py-24 px-6 relative">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {servicesData.map((service) => (
-              <div key={service.id} className="premium-service-card">
-                <div className="premium-img-container">
-                  <img src={service.image} alt={service.title} loading="lazy" />
-                  <div className="premium-img-overlay"></div>
+              <div key={service.id} className="group flex flex-col bg-[#111111] rounded-[2rem] overflow-hidden border border-white/5 hover:border-primary-color/40 transition-all duration-500 hover:shadow-[0_20px_80px_rgba(212,175,55,0.1)] h-full">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image 
+                    src={service.image} 
+                    alt={service.title} 
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-40"></div>
                 </div>
-                <div className="premium-service-content">
-                  <div className="premium-service-icon">
+
+                <div className="p-8 flex flex-col flex-grow relative">
+                  <div className="w-12 h-12 bg-primary-color/10 border border-primary-color/20 text-primary-color rounded-xl flex items-center justify-center text-lg mb-6 group-hover:bg-primary-color group-hover:text-black transition-all duration-500 transform group-hover:-rotate-12">
                     <i className={service.icon}></i>
                   </div>
-                  <h3 className="premium-service-title">{service.title}</h3>
-                  <p className="premium-service-desc">{service.description}</p>
+                  <h3 className="text-2xl font-black mb-4 tracking-tighter group-hover:text-primary-color transition-colors" style={{ fontFamily: "var(--font-heading)" }}>
+                    {service.title}
+                  </h3>
+                  <p className="text-neutral-500 text-sm font-light leading-relaxed mb-8 flex-grow">
+                    {service.description}
+                  </p>
                   
                   <Link 
                     href={`/services/${service.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-').replace(/services/i, '').replace(/--/g, '-').replace(/-$/, '')}`} 
-                    className="premium-service-btn"
+                    className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-neutral-400 group-hover:text-white transition-colors"
                   >
-                    View Projects <span style={{ marginLeft: "8px" }}>→</span>
+                    Explore Projects <span className="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
                   </Link>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* FAQ/Trust Section */}
+      <section className="py-32 bg-[#050505] border-t border-white/5 px-6">
+        <div className="container max-w-4xl mx-auto text-center">
+           <h2 className="text-3xl md:text-5xl font-black mb-12 tracking-tighter" style={{ fontFamily: "var(--font-heading)" }}>Tailored Excellence <br /><span className="text-neutral-600">Guaranteed</span></h2>
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+              <div>
+                 <h4 className="text-primary-color font-black uppercase text-xs tracking-widest mb-4">Unmatched Quality</h4>
+                 <p className="text-neutral-500 font-light leading-relaxed text-sm">We maintain rigorous standards across all our services, ensuring every stitch, photo, and design meets the highest benchmark.</p>
+              </div>
+              <div>
+                 <h4 className="text-primary-color font-black uppercase text-xs tracking-widest mb-4">Expert Professionals</h4>
+                 <p className="text-neutral-500 font-light leading-relaxed text-sm">Our team consists of vetted experts with years of mastery in their respective fields, dedicated to delivering perfection.</p>
+              </div>
+           </div>
         </div>
       </section>
-      
-      {/* Call to action section */}
-      <section style={{ padding: "80px 0", backgroundColor: "var(--primary-color)", color: "var(--text-dark)", textAlign: "center" }}>
-        <div className="container">
-          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "2.5rem", marginBottom: "20px", color: "var(--text-dark)" }}>Don't see what you need?</h2>
-          <p style={{ fontSize: "1.2rem", maxWidth: "600px", margin: "0 auto 30px", opacity: 0.9 }}>
-            Reach out to our support team and we will assist you with specialized requests.
-          </p>
-          <a href="/contact" className="btn btn-secondary" style={{ padding: "15px 35px", fontSize: "1.1rem" }}>
-            Contact Support
-          </a>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }
