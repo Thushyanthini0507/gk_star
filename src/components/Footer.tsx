@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,13 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col">
-            <h4>GK Star Multi Services</h4>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+              <Image src="/logo.png" alt="GK Star Logo" width={60} height={52} style={{ objectFit: "contain" }} />
+              <div>
+                <div style={{ color: "var(--primary-color)", fontFamily: "var(--font-heading)", fontSize: "1.3rem", fontWeight: 700 }}>GK Star</div>
+                <div style={{ color: "#aaa", fontSize: "0.7rem", letterSpacing: "2px", textTransform: "uppercase" }}>Private Limited</div>
+              </div>
+            </div>
             <p>All Your Needs in One Place.</p>
             <p>Providing exceptional services from the best professionals in Kilinochchi.</p>
           </div>
