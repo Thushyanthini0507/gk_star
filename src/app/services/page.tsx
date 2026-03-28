@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import './services.css';
 
 export default function ServicesPage() {
@@ -48,27 +49,34 @@ export default function ServicesPage() {
     },
     {
       id: 7,
+      title: "Web Design",
+      description: "Professional website design, landing pages, and online store development.",
+      icon: "fas fa-laptop-code",
+      image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      id: 8,
       title: "Cake Services",
       description: "Customized Birthday, Wedding, and Themed cakes for all your special occasions.",
       icon: "fas fa-birthday-cake",
       image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 8,
+      id: 9,
       title: "Vehicle Services",
       description: "Professional vehicle hiring and rental services for all your travel needs.",
       icon: "fas fa-car",
       image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 9,
+      id: 10,
       title: "Poultry Services",
       description: "Fresh chicken sales, Bulk chicken supply, and comprehensive Farm services.",
       icon: "fas fa-drumstick-bite",
       image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
-      id: 10,
+      id: 11,
       title: "Panthal Services",
       description: "Premium panthal and decoration services for weddings, parties, and events.",
       icon: "fas fa-campground",
@@ -119,9 +127,12 @@ export default function ServicesPage() {
                   <h3 className="premium-service-title">{service.title}</h3>
                   <p className="premium-service-desc">{service.description}</p>
                   
-                  <a href={`/contact?service=${encodeURIComponent(service.title)}`} className="premium-service-btn">
-                    Book Service <span style={{ marginLeft: "8px" }}>→</span>
-                  </a>
+                  <Link 
+                    href={`/services/${service.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-').replace(/services/i, '').replace(/--/g, '-').replace(/-$/, '')}`} 
+                    className="premium-service-btn"
+                  >
+                    View Projects <span style={{ marginLeft: "8px" }}>→</span>
+                  </Link>
                 </div>
               </div>
             ))}

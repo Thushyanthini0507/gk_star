@@ -10,13 +10,13 @@ export default function Home() {
             Elegance in Every <span style={{ color: "var(--text-light)" }}>Service</span>
           </h1>
           <p className="hero-subtitle">
-            All Your Needs in One Place - Tailoring, Beauty, Photography, and More.
+            Your one-stop destination for premium tailoring, creative design, and professional services.
           </p>
           <div className="hero-btns">
             <Link href="/services" className="btn btn-primary">
               Explore Services
             </Link>
-            <a href="https://wa.me/yourwhatsappnumber" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/94772861967" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i> Contact via WhatsApp
             </a>
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
                 <i className="fas fa-cut service-icon"></i>
                 <h3>Tailoring Services</h3>
                 <p>Blouse stitching, customized designs, and bridal blouse work by experts.</p>
-                <Link href="/services" className="btn btn-secondary">
+                <Link href="/services/tailoring" className="btn btn-secondary">
                   View Details
                 </Link>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
                 <i className="fas fa-magic service-icon"></i>
                 <h3>Aari Work</h3>
                 <p>Exquisite bridal Aari designs and professional embroidery embroidery classes.</p>
-                <Link href="/services" className="btn btn-secondary">
+                <Link href="/services/aari-work" className="btn btn-secondary">
                   View Details
                 </Link>
               </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 <i className="fas fa-palette service-icon"></i>
                 <h3>Designing Services</h3>
                 <p>Professional logo design, visiting cards, and social media branding.</p>
-                <Link href="/services" className="btn btn-secondary">
+                <Link href="/services/designing" className="btn btn-secondary">
                   View Details
                 </Link>
               </div>
