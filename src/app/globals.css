@@ -89,6 +89,15 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Light Theme Specific Tokens */
+  --bg-premium: #FFFFFF;
+  --text-main: #1A1A1A;
+  --text-muted: #666666;
+  --soft-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  --premium-shadow: 0 30px 70px rgba(0, 0, 0, 0.07);
+  --border-light: rgba(0, 0, 0, 0.06);
+  --gold-glow: 0 10px 30px rgba(212, 175, 55, 0.1);
 }
 
 * {
