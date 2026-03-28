@@ -6,7 +6,6 @@ export interface ServiceItem {
   image: string;
   phone: string;
   category: string; // matches service slug
-  subcategory: string; // e.g. "Bridal", "Simple"
 }
 
 export const SAMPLE_ITEMS: ServiceItem[] = [
@@ -18,8 +17,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹1,200",
     image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "tailoring",
-    subcategory: "Bridal"
+    category: "tailoring"
   },
   {
     id: "t2",
@@ -28,8 +26,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹850",
     image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "tailoring",
-    subcategory: "Simple"
+    category: "tailoring"
   },
   // Aari Work
   {
@@ -39,8 +36,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹4,500",
     image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "aari-work",
-    subcategory: "Heavy Work"
+    category: "aari-work"
   },
   {
     id: "a2",
@@ -49,8 +45,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹1,800",
     image: "https://images.unsplash.com/photo-1620794354252-09292db20b41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "aari-work",
-    subcategory: "Simple"
+    category: "aari-work"
   },
   // Beauty
   {
@@ -60,8 +55,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹18,000",
     image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "beauty-makeup",
-    subcategory: "Bridal"
+    category: "beauty-makeup"
   },
   {
     id: "b2",
@@ -70,8 +64,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹2,500",
     image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "beauty-makeup",
-    subcategory: "Facial"
+    category: "beauty-makeup"
   },
   // Salon
   {
@@ -81,8 +74,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹3,000",
     image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "hair-cutting-salon",
-    subcategory: "Hair Styling"
+    category: "hair-cutting-salon"
   },
   {
     id: "s2",
@@ -91,8 +83,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹2,500",
     image: "https://images.unsplash.com/photo-1522337300245-22765c142db3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "hair-cutting-salon",
-    subcategory: "Bridal"
+    category: "hair-cutting-salon"
   },
   // Designing
   {
@@ -102,8 +93,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹5,000",
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "designing",
-    subcategory: "Corporate"
+    category: "designing"
   },
   {
     id: "d2",
@@ -112,8 +102,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹800",
     image: "https://images.unsplash.com/photo-1589330694653-ded6df03f754?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "designing",
-    subcategory: "Business Cards"
+    category: "designing"
   },
   // Photography
   {
@@ -123,8 +112,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹45,000",
     image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "photography-camera",
-    subcategory: "Wedding"
+    category: "photography-camera"
   },
   {
     id: "p2",
@@ -133,8 +121,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹5,000",
     image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "photography-camera",
-    subcategory: "Outdoor"
+    category: "photography-camera"
   },
   // Cakes
   {
@@ -144,8 +131,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹800/kg",
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "cakes",
-    subcategory: "Party"
+    category: "cakes"
   },
   {
     id: "c2",
@@ -154,8 +140,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹5,000+",
     image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "cakes",
-    subcategory: "Wedding"
+    category: "cakes"
   },
   // Vehicles
   {
@@ -165,8 +150,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹10,000",
     image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "vehicles",
-    subcategory: "Wedding"
+    category: "vehicles"
   },
   // Poultry
   {
@@ -176,8 +160,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "₹450/kg",
     image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "poultry",
-    subcategory: "Fresh Meat"
+    category: "poultry"
   },
   // Panthal
   {
@@ -187,8 +170,7 @@ export const SAMPLE_ITEMS: ServiceItem[] = [
     price: "On Quote",
     image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     phone: "919876543210",
-    category: "panthal",
-    subcategory: "Decoration"
+    category: "panthal"
   }
 ];
 
