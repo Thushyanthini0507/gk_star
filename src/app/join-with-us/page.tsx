@@ -22,7 +22,7 @@ export default function JoinWithUsPage() {
                Join a curated ecosystem of world-class artisans and corporate experts. Unlock an era of uncompromised growth and prestige.
             </p>
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-               <Link href="#apply" className="bg-foreground text-background px-14 py-5 rounded-full font-bold text-sm uppercase tracking-[0.3em] hover:bg-primary-gold hover:text-text-primary transition-all shadow-premium">
+               <Link href="#apply" className="bg-primary-gold text-dark-blue px-14 py-5 rounded-full font-bold text-sm uppercase tracking-[0.3em] hover:bg-primary-gold hover:text-text-primary transition-all shadow-premium">
                   Begin Your Application
                </Link>
             </div>
@@ -186,7 +186,7 @@ export default function JoinWithUsPage() {
                      <textarea rows={4} className="w-full bg-deep-dark border border-border-dark rounded-3xl px-8 py-6 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Briefly describe your craft..."></textarea>
                   </div>
                   <div className="pt-6">
-                     <button type="submit" className="w-full bg-foreground text-background py-6 md:py-8 rounded-[2rem] font-bold text-sm uppercase tracking-[0.5em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
+                     <button type="submit" className="w-full bg-primary-gold text-dark-blue py-6 md:py-8 rounded-[2rem] font-bold text-sm uppercase tracking-[0.5em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
                         Submit Credential
                      </button>
                   </div>

@@ -90,7 +90,7 @@ export default function GalleryPage() {
                 onClick={() => setFilter(cat)}
                 className={`px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-500 border ${
                   filter === cat 
-                    ? "bg-foreground text-background border-foreground shadow-premium" 
+                    ? "bg-primary-gold text-dark-blue border-primary-gold shadow-premium" 
                     : "bg-transparent text-text-secondary border-border-dark hover:border-primary-gold hover:text-primary-gold"
                 }`}
               >
@@ -151,7 +151,7 @@ export default function GalleryPage() {
             <h2 className="text-4xl md:text-7xl font-bold mb-12 tracking-tighter text-text-primary font-heading leading-tight">
                Ready for your <br /> <span className="text-primary-gold italic font-heading">Original</span> masterpiece?
             </h2>
-            <Link href="/contact" className="inline-block bg-foreground text-background px-14 py-5 rounded-full font-bold text-xs uppercase tracking-[0.4em] hover:bg-primary-gold hover:text-text-primary transition-all shadow-premium">
+            <Link href="/contact" className="inline-block bg-primary-gold text-dark-blue px-14 py-5 rounded-full font-bold text-xs uppercase tracking-[0.4em] hover:bg-primary-gold hover:text-text-primary transition-all shadow-premium">
                Contact Our Artisans
             </Link>
          </div>
