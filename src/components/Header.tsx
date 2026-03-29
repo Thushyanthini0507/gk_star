@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -26,81 +27,95 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "py-4 bg-black/80 backdrop-blur-xl border-b border-white/5" : "py-8 bg-transparent"}`}>
-      <div className="container mx-auto px-6 flex items-center justify-between">
+    <header className={cn(
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+      scrolled 
+        ? "py-4 bg-white/80 backdrop-blur-md border-b border-border-subtle shadow-premium" 
+        : "py-6 bg-transparent"
+    )}>
+      <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-4 group">
-          <div className="relative w-12 h-12 md:w-16 md:h-14 overflow-hidden rounded-xl border border-white/10 group-hover:border-primary-color/50 transition-all duration-500 bg-black/20 p-2">
+        <Link href="/" className="flex items-center gap-3 md:gap-4 group">
+          <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+            <div className="absolute inset-0 bg-primary-gold opacity-10 rounded-xl group-hover:scale-110 transition-transform duration-500"></div>
             <Image
               src="/logo.png"
               alt="GK Star Logo"
               fill
-              className="object-contain p-1"
+              className="object-contain p-1.5"
               priority
             />
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-xl md:text-2xl font-black tracking-tighter text-white group-hover:text-primary-color transition-colors" style={{ fontFamily: "var(--font-heading)" }}>
+          <div className="flex flex-col">
+            <span className="text-lg md:text-xl font-bold tracking-tight text-foreground group-hover:text-primary-gold transition-colors">
               GK STAR
             </span>
-            <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.4em] text-neutral-500 group-hover:text-neutral-300 transition-colors">
+            <span className="text-[8px] md:text-[9px] font-bold uppercase tracking-[0.3em] text-muted-foreground">
               Private Limited
             </span>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
               href={link.href}
-              className="relative text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-all group py-2"
+              className="relative text-[11px] font-bold uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors group py-2"
             >
               {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-primary-color transition-all duration-500 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary-gold transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
           <Link 
             href="/contact" 
-            className="ml-4 px-8 py-3 bg-primary-color text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95"
+            className="ml-4 px-7 py-3 bg-foreground text-background text-[10px] font-bold uppercase tracking-widest rounded-full hover:bg-primary-gold hover:text-foreground transition-all duration-300 shadow-premium active:scale-95"
           >
-            Get Quote
+            Get Expert Help
           </Link>
         </nav>
 
         {/* Mobile Toggle */}
         <button 
-          className="lg:hidden w-12 h-12 flex items-center justify-center text-primary-color border border-white/10 rounded-xl hover:bg-white/5 transition-all"
+          className="lg:hidden w-10 h-10 flex items-center justify-center text-foreground rounded-full hover:bg-soft-gray transition-colors border border-border-subtle"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <i className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-xl`}></i>
+          <i className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-sm`}></i>
         </button>
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-40 bg-black/95 backdrop-blur-2xl transition-all duration-700 lg:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none translate-x-full"}`}>
-        <div className="flex flex-col items-center justify-center h-full space-y-12">
+      <div className={cn(
+        "fixed inset-0 z-40 bg-white transition-all duration-500 lg:hidden flex flex-col items-center justify-center",
+        isOpen ? "translate-x-0" : "translate-x-full"
+      )}>
+        <button 
+          className="absolute top-8 right-8 w-12 h-12 flex items-center justify-center text-foreground rounded-full border border-border-subtle"
+          onClick={() => setIsOpen(false)}
+        >
+          <i className="fas fa-times text-lg"></i>
+        </button>
+
+        <div className="flex flex-col items-center gap-10">
           {navLinks.map((link, i) => (
              <Link 
                key={link.name} 
                href={link.href}
                onClick={() => setIsOpen(false)}
-               className="text-4xl font-black tracking-tighter text-white hover:text-primary-color transition-all transform hover:scale-110"
-               style={{ transitionDelay: `${i * 100}ms` }}
+               className="text-3xl font-bold tracking-tight text-foreground hover:text-primary-gold transition-all"
+               style={{ transitionDelay: `${i * 50}ms` }}
              >
                {link.name}
              </Link>
           ))}
-          <div className="pt-12">
-             <Link 
-               href="/contact" 
-               className="px-12 py-5 bg-primary-color text-black text-xs font-black uppercase tracking-[0.3em] rounded-full"
-               onClick={() => setIsOpen(false)}
-             >
-               Start Project
-             </Link>
-          </div>
+          <Link 
+            href="/contact" 
+            className="mt-4 px-10 py-4 bg-foreground text-background text-xs font-bold uppercase tracking-widest rounded-full"
+            onClick={() => setIsOpen(false)}
+          >
+            Get Quote
+          </Link>
         </div>
       </div>
     </header>

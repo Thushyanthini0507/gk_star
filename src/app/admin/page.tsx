@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function AdminLogin() {
@@ -14,7 +15,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     
-    // Placeholder login logic until Supabase is configured
+    // Placeholder login logic
     setTimeout(() => {
       setLoading(false);
       if (email === "admin@gkstar.com" && password === "admin123") {
@@ -26,59 +27,62 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 bg-[#000000]">
-      <div className="w-full max-w-md bg-[#111111] rounded-[2.5rem] border border-white/5 p-10 md:p-12 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-primary-color/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+    <div className="min-h-screen flex items-center justify-center p-6 bg-off-white selection:bg-primary-gold/20">
+      <div className="w-full max-w-lg bg-white rounded-[3rem] border border-border-subtle p-12 md:p-16 shadow-premium relative overflow-hidden group">
+        <div className="absolute top-0 right-0 w-48 h-48 bg-primary-gold/[0.03] rounded-full blur-3xl -mr-24 -mt-24 group-hover:scale-150 transition-transform duration-1000"></div>
         
-        <div className="text-center mb-10">
-          <div className="inline-block px-4 py-1 rounded-full border border-primary-color/20 text-primary-color text-[10px] font-black uppercase tracking-widest mb-6">
-            Secure Access
+        <div className="text-center mb-12 relative z-10">
+          <div className="inline-block px-5 py-2 rounded-full border border-primary-gold/20 bg-primary-gold/[0.02] text-primary-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
+            Secure Entry
           </div>
-          <h1 className="text-3xl font-black tracking-tighter text-white mb-2" style={{ fontFamily: "var(--font-heading)" }}>
-            GK STAR <span className="text-primary-color">ADMIN</span>
+          <h1 className="text-4xl font-bold tracking-tighter text-foreground mb-3 font-heading">
+            GK STAR <span className="text-primary-gold italic font-heading lowercase tracking-normal">admin</span>
           </h1>
-          <p className="text-neutral-500 text-sm font-light">Enter your credentials to manage the platform.</p>
+          <p className="text-muted-foreground text-sm font-medium opacity-70 italic">Universal Control Portal</p>
         </div>
 
-        <form onSubmit={handleLogin} className="space-y-6">
-          <div>
-            <label className="block text-[10px] font-black uppercase tracking-widest text-neutral-400 mb-2 ml-4">Email Address</label>
+        <form onSubmit={handleLogin} className="space-y-8 relative z-10">
+          <div className="space-y-3">
+            <label className="block text-[10px] font-bold uppercase tracking-[0.4em] text-muted-foreground mb-2 ml-2">Authorized Email</label>
             <input 
               type="email" 
               required
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-primary-color transition-colors"
+              className="w-full bg-off-white border border-border-subtle rounded-2xl px-8 py-5 text-foreground focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-muted-foreground/30 shadow-sm"
               placeholder="admin@gkstar.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div>
-            <label className="block text-[10px] font-black uppercase tracking-widest text-neutral-400 mb-2 ml-4">Password</label>
+          <div className="space-y-3">
+            <label className="block text-[10px] font-bold uppercase tracking-[0.4em] text-muted-foreground mb-2 ml-2">Access Key</label>
             <input 
               type="password" 
               required
-              className="w-full bg-black border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-primary-color transition-colors"
+              className="w-full bg-off-white border border-border-subtle rounded-2xl px-8 py-5 text-foreground focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-muted-foreground/30 shadow-sm"
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           
-          <button 
-            type="submit" 
-            disabled={loading}
-            className="w-full bg-primary-color text-black font-black uppercase tracking-[0.2em] py-5 rounded-2xl hover:bg-white transition-all transform active:scale-95 disabled:opacity-50 mt-4"
-          >
-            {loading ? "Authenticating..." : "Login to Portal"}
-          </button>
+          <div className="pt-4">
+            <button 
+              type="submit" 
+              disabled={loading}
+              className="w-full bg-foreground text-background font-bold uppercase tracking-[0.4em] py-6 rounded-[2rem] hover:bg-primary-gold hover:text-foreground transition-all transform active:scale-[0.98] disabled:opacity-50 shadow-premium text-xs"
+            >
+              {loading ? "Verifying..." : "Enter Command Center"}
+            </button>
+          </div>
         </form>
 
-        <div className="mt-10 text-center">
-           <Link href="/" className="text-xs text-neutral-600 hover:text-white transition-colors">← Back to Website</Link>
+        <div className="mt-14 text-center border-t border-border-subtle pt-8">
+           <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground hover:text-primary-gold transition-colors flex items-center justify-center gap-3 group">
+             <i className="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> 
+             Return to Public Terminal
+           </Link>
         </div>
       </div>
     </div>
   );
 }
-
-import Link from "next/link";
