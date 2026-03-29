@@ -76,9 +76,9 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen selection:bg-primary-gold/20 overflow-hidden pt-20">
+    <div className="bg-dark-blue min-h-screen selection:bg-primary-gold/20 overflow-hidden pt-20">
       {/* Header Section */}
-      <section className="relative py-24 md:py-32 flex items-center justify-center overflow-hidden bg-off-white">
+      <section className="relative py-24 md:py-32 flex items-center justify-center overflow-hidden bg-deep-dark">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920"
@@ -91,17 +91,17 @@ export default function ServicesPage() {
         </div>
 
         <div className="container-custom relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white shadow-premium border border-border-subtle mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-dark-blue shadow-premium border border-border-dark mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <span className="w-1.5 h-1.5 rounded-full bg-primary-gold"></span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground">Professional Expertise</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-text-secondary">Professional Expertise</span>
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-[1] tracking-tighter text-foreground font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
+          <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-[1] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
             Our <span className="text-primary-gold italic font-heading">Premium</span> <br/>
             Services
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
+          <p className="text-lg md:text-xl text-text-secondary font-medium max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
             Elevating standards through meticulous craftsmanship and visionary design. Experience excellence in every detail.
           </p>
 
@@ -112,7 +112,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid Section */}
-      <section id="services-grid" className="section-padding bg-white">
+      <section id="services-grid" className="section-padding bg-dark-blue">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
             {servicesData.map((service, index) => (
@@ -131,24 +131,24 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-white via-white/10 to-transparent opacity-60"></div>
                   
                   {/* Icon Badge */}
-                  <div className="absolute top-6 right-6 w-12 h-12 bg-white/95 backdrop-blur-md rounded-2xl shadow-premium border border-border-subtle flex items-center justify-center text-lg text-primary-gold group-hover:bg-primary-gold group-hover:text-foreground transition-all duration-500">
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-dark-blue/95 backdrop-blur-md rounded-2xl shadow-premium border border-border-dark flex items-center justify-center text-lg text-primary-gold group-hover:bg-primary-gold group-hover:text-text-primary transition-all duration-500">
                     <i className={service.icon}></i>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-bold mb-4 tracking-tighter text-foreground group-hover:text-primary-gold transition-colors font-heading">
+                  <h3 className="text-2xl font-bold mb-4 tracking-tighter text-text-primary group-hover:text-primary-gold transition-colors font-heading">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm font-medium leading-relaxed mb-10 flex-grow opacity-80">
+                  <p className="text-text-secondary text-sm font-medium leading-relaxed mb-10 flex-grow opacity-80">
                     {service.description}
                   </p>
                   
-                  <div className="pt-6 border-t border-border-subtle">
+                  <div className="pt-6 border-t border-border-dark">
                     <Link 
                       href={`/services/${service.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-').replace(/services/i, '').replace(/--/g, '-').replace(/-$/, '')}`} 
-                      className="group/link inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-foreground hover:text-primary-gold transition-colors"
+                      className="group/link inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-text-primary hover:text-primary-gold transition-colors"
                     >
                       Learn More
                       <span className="transform group-hover/link:translate-x-1 transition-transform duration-300">→</span>
@@ -162,13 +162,13 @@ export default function ServicesPage() {
       </section>
 
       {/* Trust Section */}
-      <section className="section-padding bg-off-white border-y border-border-subtle">
+      <section className="section-padding bg-deep-dark border-y border-border-dark">
         <div className="container-custom">
           <div className="text-center mb-24">
             <span className="text-primary-gold font-bold uppercase tracking-[0.5em] text-[10px] mb-6 block">Our Commitment</span>
-            <h2 className="text-4xl md:text-7xl font-bold mb-8 tracking-tighter text-foreground font-heading">
+            <h2 className="text-4xl md:text-7xl font-bold mb-8 tracking-tighter text-text-primary font-heading">
               Quality Without <br/>
-              <span className="text-muted-foreground/30">Compromise</span>
+              <span className="text-text-secondary/30">Compromise</span>
             </h2>
           </div>
 
@@ -190,12 +190,12 @@ export default function ServicesPage() {
                 desc: "We value your time as much as our craft, ensuring punctual and perfect results."
               }
             ].map((item, i) => (
-              <div key={i} className="group p-10 bg-white rounded-3xl border border-border-subtle shadow-premium hover:shadow-hover transition-all duration-700 text-center">
-                <div className="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-off-white text-primary-gold text-2xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+              <div key={i} className="group p-10 bg-dark-blue rounded-3xl border border-border-dark shadow-premium hover:shadow-hover transition-all duration-700 text-center">
+                <div className="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-deep-dark text-primary-gold text-2xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
                   <i className={item.icon}></i>
                 </div>
-                <h4 className="text-foreground font-bold uppercase text-xs tracking-widest mb-4">{item.title}</h4>
-                <p className="text-muted-foreground font-medium leading-relaxed text-sm opacity-80">{item.desc}</p>
+                <h4 className="text-text-primary font-bold uppercase text-xs tracking-widest mb-4">{item.title}</h4>
+                <p className="text-text-secondary font-medium leading-relaxed text-sm opacity-80">{item.desc}</p>
               </div>
             ))}
           </div>

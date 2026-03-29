@@ -52,7 +52,7 @@ export default function ServiceDetailPage({ params }: { params: Promise<{ servic
           {items.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {items.map((item) => (
-                <div key={item.id} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-neutral-100 flex flex-col">
+                <div key={item.id} className="group bg-dark-blue rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-neutral-100 flex flex-col">
                   {/* Image Container */}
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img 
@@ -94,7 +94,7 @@ export default function ServiceDetailPage({ params }: { params: Promise<{ servic
               ))}
             </div>
           ) : (
-            <div className="bg-white rounded-3xl p-20 text-center shadow-sm border border-neutral-100">
+            <div className="bg-dark-blue rounded-3xl p-20 text-center shadow-sm border border-neutral-100">
               <div className="w-24 h-24 bg-neutral-50 rounded-full flex items-center justify-center mx-auto mb-8">
                 <i className="fas fa-layer-group text-neutral-300 text-4xl"></i>
               </div>
