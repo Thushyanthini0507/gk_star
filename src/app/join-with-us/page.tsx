@@ -139,23 +139,23 @@ export default function JoinWithUsPage() {
                <form className="space-y-10" onSubmit={e => e.preventDefault()}>
                   <div className="space-y-3">
                      <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Full Identity</label>
-                     <input type="text" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Full name or corporate identity" />
+                     <input type="text" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Full name or corporate identity" />
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Secure Email</label>
-                       <input type="email" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="name@luxury.com" />
+                       <input type="email" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="name@luxury.com" />
                     </div>
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Phone Line</label>
-                       <input type="tel" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="+94 77 ..." />
+                       <input type="tel" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="+94 77 ..." />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Artisan Division</label>
                        <div className="relative">
-                          <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium shadow-sm appearance-none cursor-pointer">
+                          <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium shadow-sm appearance-none cursor-pointer">
                              <option>Aari Work Services</option>
                              <option>Tailoring Services</option>
                              <option>Beauty & Makeup</option>
@@ -170,7 +170,7 @@ export default function JoinWithUsPage() {
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Legacy Experience</label>
                        <div className="relative">
-                          <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium shadow-sm appearance-none cursor-pointer">
+                          <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium shadow-sm appearance-none cursor-pointer">
                              <option>1 – 3 Masterful Years</option>
                              <option>3 – 5 Elite Years</option>
                              <option>5+ Legendary Years</option>
@@ -183,10 +183,10 @@ export default function JoinWithUsPage() {
                   </div>
                   <div className="space-y-3">
                      <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Statement of Intent</label>
-                     <textarea rows={4} className="w-full bg-deep-dark border border-border-dark rounded-3xl px-8 py-6 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Briefly describe your craft..."></textarea>
+                     <textarea rows={4} className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-4 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Briefly describe your craft..."></textarea>
                   </div>
                   <div className="pt-6">
-                     <button type="submit" className="w-full bg-primary-gold text-dark-blue py-6 md:py-8 rounded-[2rem] font-bold text-sm uppercase tracking-[0.5em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
+                     <button type="submit" className="w-full bg-primary-gold text-dark-blue py-4 rounded-xl font-bold text-sm uppercase tracking-[0.5em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
                         Submit Credential
                      </button>
                   </div>

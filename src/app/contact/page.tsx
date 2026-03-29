@@ -86,18 +86,18 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Full Name</label>
-                       <input type="text" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Your identity" />
+                       <input type="text" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="Your identity" />
                     </div>
                     <div className="space-y-3">
                        <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Email Address</label>
-                       <input type="email" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="name@domain.com" />
+                       <input type="email" className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="name@domain.com" />
                     </div>
                   </div>
                   
                   <div className="space-y-3">
                      <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Subject of Interest</label>
                      <div className="relative">
-                        <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-8 py-5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium appearance-none cursor-pointer shadow-sm">
+                        <select className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-3.5 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium appearance-none cursor-pointer shadow-sm">
                            <option>Bespoke Tailoring Inquiry</option>
                            <option>Aari Work Commission</option>
                            <option>Bridal Makeup Consultation</option>
@@ -113,11 +113,11 @@ export default function ContactPage() {
 
                   <div className="space-y-3">
                      <label className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary ml-2">Message Body</label>
-                     <textarea rows={6} className="w-full bg-deep-dark border border-border-dark rounded-3xl px-8 py-6 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="How can our artisans serve you?"></textarea>
+                     <textarea rows={6} className="w-full bg-deep-dark border border-border-dark rounded-2xl px-5 py-4 text-text-primary focus:outline-none focus:border-primary-gold transition-all font-medium placeholder:text-text-secondary/30 shadow-sm" placeholder="How can our artisans serve you?"></textarea>
                   </div>
 
                   <div className="pt-6">
-                     <button type="submit" className="w-full bg-primary-gold text-dark-blue py-6 md:py-8 rounded-[2rem] font-bold text-sm uppercase tracking-[0.4em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
+                     <button type="submit" className="w-full bg-primary-gold text-dark-blue py-4 rounded-xl font-bold text-sm uppercase tracking-[0.4em] hover:bg-primary-gold hover:text-text-primary transition-all transform active:scale-[0.98] shadow-premium">
                         Dispatch Message
                      </button>
                   </div>
