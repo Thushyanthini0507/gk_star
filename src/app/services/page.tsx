@@ -96,7 +96,7 @@ export default function ServicesPage() {
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-text-secondary">Professional Expertise</span>
           </div>
           
-          <h1 className="font-bold mb-8 leading-[1] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="font-bold mb-8 leading-[1] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-6xl md:text-8xl lg:text-9xl">
             Our <span className="text-primary-gold italic font-heading">Premium</span> <br/>
             Services
           </h1>

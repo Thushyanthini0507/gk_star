@@ -14,7 +14,7 @@ export default function JoinWithUsPage() {
             <span className="inline-flex px-6 py-2 rounded-full border border-primary-gold/20 text-primary-gold text-[10px] font-bold uppercase tracking-[0.4em] mb-10 bg-dark-blue shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-1000">
                Elite Partnerships
             </span>
-            <h1 className="font-bold mb-10 tracking-tighter leading-none text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-bold mb-10 tracking-tighter leading-none text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-6xl md:text-8xl lg:text-9xl">
                GROW WITH <br />
                <span className="text-primary-gold italic font-heading">GK STAR</span>
             </h1>

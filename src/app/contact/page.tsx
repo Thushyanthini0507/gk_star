@@ -11,7 +11,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary-gold/[0.03] to-transparent"></div>
         <div className="container-custom relative z-10 text-center">
           <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.5em] mb-6 block animate-in fade-in slide-in-from-bottom-4 duration-1000">Concierge Access</span>
-          <h1 className="font-bold mb-8 leading-none tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="font-bold mb-8 tracking-tighter leading-none text-text-primary drop-shadow-sm font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-6xl md:text-8xl lg:text-[7rem]">
              CONNECT WITH <br /> <span className="text-primary-gold italic font-heading">EXCELLENCE</span>
           </h1>
           <p className="text-text-secondary text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">

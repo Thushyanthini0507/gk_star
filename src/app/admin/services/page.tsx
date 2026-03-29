@@ -21,7 +21,7 @@ export default function AdminServices() {
     <div className="space-y-12">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
         <div>
-          <h1 className="font-bold tracking-tighter mb-3 text-foreground font-heading text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="font-bold tracking-tighter mb-3 text-foreground font-heading text-6xl md:text-7xl lg:text-8xl">
             Service <span className="text-primary-gold italic font-heading">Categories</span>
           </h1>
           <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-[0.4em] opacity-60">Manage your 10 core business divisions</p>

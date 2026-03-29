@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.5em] mb-8 block animate-in fade-in slide-in-from-bottom-4 duration-1000">Est. 2014</span>
-            <h1 className="font-bold mb-10 leading-[0.85] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 drop-shadow-sm text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="font-bold mb-10 leading-[0.85] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 drop-shadow-sm text-6xl md:text-8xl lg:text-9xl">
               THE LEGACY OF <br />
               <span className="text-primary-gold italic font-heading drop-shadow-[0_0_20px_rgba(250,204,21,0.3)]">BEYOND SERVICE</span>
             </h1>

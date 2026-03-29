@@ -54,7 +54,7 @@ export default function Home() {
             <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary">GK Star Multi Services</span>
           </div>
 
-          <h1 className="font-bold mb-8 leading-[0.9] tracking-tighter text-text-primary drop-shadow-lg font-heading animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="font-bold mb-8 leading-[0.9] tracking-tighter text-text-primary drop-shadow-lg font-heading animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 text-6xl md:text-8xl lg:text-9xl">
             ELEGANCE IN <br />
             <span className="text-primary-gold italic font-heading drop-shadow-[0_0_25px_rgba(250,204,21,0.3)]">EVERY DETAIL</span>
           </h1>
