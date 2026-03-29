@@ -143,20 +143,20 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="bg-foreground py-20 md:py-32 px-10 md:px-20 rounded-[3rem] md:rounded-[4rem] text-center relative overflow-hidden shadow-hover">
-            <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-primary-gold/5 rounded-full blur-[100px] -mr-80 -mt-80"></div>
-            <div className="max-w-4xl mx-auto relative z-10">
-              <h2 className="text-5xl md:text-8xl font-bold mb-10 leading-tight tracking-tighter text-background font-heading">
+          <div className="bg-foreground py-12 md:py-20 px-8 md:px-12 rounded-3xl md:rounded-[3rem] text-center relative overflow-hidden shadow-hover">
+            <div className="absolute top-0 right-0 w-[30rem] h-[30rem] bg-primary-gold/5 rounded-full blur-[80px] -mr-60 -mt-60"></div>
+            <div className="max-w-3xl mx-auto relative z-10">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-tighter text-background font-heading">
                 Ready to create something <br/>
                 <span className="text-primary-gold italic font-heading">Extraordinary?</span>
               </h2>
-              <p className="text-background/60 text-lg md:text-xl font-medium mb-16 leading-relaxed">
+              <p className="text-background/60 text-base md:text-lg font-medium mb-10 leading-relaxed">
                 Join thousands of satisfied clients who trust GK Star for their <br className="hidden md:block"/> 
                 most important moments and professional needs.
               </p>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-                 <Link href="/about" className="text-background hover:text-primary-gold font-bold uppercase tracking-widest text-xs transition-colors border-b-2 border-primary-gold/30 pb-2">Our Story</Link>
-                 <Link href="/contact" className="bg-background text-foreground px-14 py-5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-primary-gold transition-all shadow-premium">Get in Touch</Link>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10">
+                 <Link href="/about" className="text-background hover:text-primary-gold font-bold uppercase tracking-widest text-xs transition-colors border-b-2 border-primary-gold/30 pb-2 flex-shrink-0">Our Story</Link>
+                 <Link href="/contact" className="bg-background text-foreground px-10 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-primary-gold transition-all shadow-premium flex-shrink-0">Get in Touch</Link>
               </div>
             </div>
           </div>
