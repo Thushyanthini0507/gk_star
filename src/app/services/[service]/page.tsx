@@ -26,7 +26,7 @@ export default function ServiceDetailPage({ params }: { params: Promise<{ servic
             <span className="mr-2">←</span> Back to all services
           </Link>
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-black text-primary-color mb-6 leading-tight tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
+            <h1 className="font-black text-primary-color mb-6 leading-tight tracking-tight text-4xl md:text-5xl lg:text-6xl" style={{ fontFamily: "var(--font-heading)" }}>
               {serviceName}
             </h1>
             <p className="text-lg md:text-xl text-neutral-400 font-light leading-relaxed">

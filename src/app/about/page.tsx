@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.5em] mb-8 block animate-in fade-in slide-in-from-bottom-4 duration-1000">Est. 2014</span>
-            <h1 className="text-6xl md:text-9xl font-bold mb-10 leading-[0.85] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 drop-shadow-sm">
+            <h1 className="font-bold mb-10 leading-[0.85] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 drop-shadow-sm text-4xl md:text-5xl lg:text-6xl">
               THE LEGACY OF <br />
               <span className="text-primary-gold italic font-heading drop-shadow-[0_0_20px_rgba(250,204,21,0.3)]">BEYOND SERVICE</span>
             </h1>
@@ -45,7 +45,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-8">
             <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.3em]">Our Philosophy</span>
-            <h2 className="text-4xl md:text-6xl font-bold leading-none tracking-tighter text-text-primary font-heading">
+            <h2 className="font-bold leading-none tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">
               Crafting <br /> <span className="text-text-secondary/50 font-light italic font-heading">A New Standard</span>
             </h2>
             <p className="text-text-secondary text-lg font-medium leading-relaxed opacity-80">
@@ -71,7 +71,7 @@ export default function AboutPage() {
              { label: "Years of Trust", value: "10+" }
            ].map((stat, i) => (
              <div key={i} className="flex flex-col gap-2 group">
-                <span className="text-4xl md:text-7xl font-bold tracking-tighter text-text-secondary/10 group-hover:text-primary-gold/30 transition-colors duration-700 line-clamp-1">{stat.value}</span>
+                <span className="font-bold tracking-tighter text-text-secondary/10 group-hover:text-primary-gold/30 transition-colors duration-700 line-clamp-1 text-4xl md:text-5xl lg:text-6xl">{stat.value}</span>
                 <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-text-secondary">{stat.label}</span>
              </div>
            ))}
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] bg-primary-gold/5 rounded-full blur-[100px] opacity-50"></div>
         <div className="container-custom text-center mb-24 relative z-10">
           <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.3em] mb-4 block">The GK Promise</span>
-          <h2 className="text-4xl md:text-7xl font-bold tracking-tighter text-text-primary font-heading">Core Values</h2>
+          <h2 className="font-bold tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">Core Values</h2>
         </div>
         
         <div className="container-custom grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -120,10 +120,10 @@ export default function AboutPage() {
       {/* Quote Section */}
       <section className="py-48 bg-dark-blue relative overflow-hidden">
         <div className="container-custom text-center max-w-4xl mx-auto relative z-10">
-           <div className="text-border-dark text-9xl mb-12 flex justify-center drop-shadow-sm">
+           <div className="text-border-dark mb-12 flex justify-center drop-shadow-sm text-4xl md:text-5xl lg:text-6xl">
              <i className="fas fa-quote-left"></i>
            </div>
-           <p className="text-3xl md:text-5xl font-light italic leading-tight text-text-primary mb-12 font-heading">
+           <p className="font-light italic leading-tight text-text-primary mb-12 font-heading text-4xl md:text-5xl lg:text-6xl">
              "Our vision is to foster an environment where local experts can thrive by connecting them seamlessly with customers through a gold-standard interface."
            </p>
            <h4 className="text-primary-gold font-bold uppercase tracking-[0.4em] text-sm">The GK Star Leadership</h4>

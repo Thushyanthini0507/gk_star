@@ -30,7 +30,7 @@ function ItemsContent() {
       />
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-3 text-foreground font-heading">
+          <h1 className="font-bold tracking-tighter mb-3 text-foreground font-heading text-4xl md:text-5xl lg:text-6xl">
             Portfolio <span className="text-primary-gold italic font-heading">Items</span>
           </h1>
           <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-[0.4em] opacity-60">
@@ -97,7 +97,7 @@ function ItemsContent() {
         
         {filteredItems.length === 0 && (
           <div className="p-24 text-center">
-             <div className="text-muted-foreground/10 text-6xl mb-6 flex justify-center">
+             <div className="text-muted-foreground/10 text-3xl md:text-4xl mb-6 flex justify-center">
                <i className="fas fa-folder-open"></i>
              </div>
              <p className="text-muted-foreground font-medium italic opacity-60">No items found for this selection.</p>

@@ -71,7 +71,7 @@ export default function GalleryPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary-gold/[0.03] to-transparent"></div>
         <div className="container-custom relative z-10 text-center">
           <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.5em] mb-6 block animate-in fade-in slide-in-from-bottom-4 duration-1000">Visual Excellence</span>
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
+          <h1 className="font-bold mb-8 tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
             THE <span className="text-primary-gold italic font-heading">GALLERY</span>
           </h1>
           <p className="text-text-secondary text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
@@ -137,7 +137,7 @@ export default function GalleryPage() {
 
         {filteredItems.length === 0 && (
           <div className="container-custom py-40 text-center">
-             <div className="text-text-secondary/10 text-8xl mb-8 flex justify-center">
+             <div className="text-text-secondary/10 mb-8 flex justify-center text-4xl md:text-5xl lg:text-6xl">
                <i className="fas fa-camera"></i>
              </div>
              <p className="text-text-secondary text-lg font-medium italic opacity-60">The collection is expanding. Check back shortly.</p>
@@ -148,7 +148,7 @@ export default function GalleryPage() {
       {/* CTA Section */}
       <section className="section-padding bg-dark-blue border-t border-border-dark text-center">
          <div className="container-custom max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-7xl font-bold mb-12 tracking-tighter text-text-primary font-heading leading-tight">
+            <h2 className="font-bold mb-12 tracking-tighter text-text-primary font-heading leading-tight text-4xl md:text-5xl lg:text-6xl">
                Ready for your <br /> <span className="text-primary-gold italic font-heading">Original</span> masterpiece?
             </h2>
             <Link href="/contact" className="inline-block bg-primary-gold text-dark-blue px-14 py-5 rounded-full font-bold text-xs uppercase tracking-[0.4em] hover:bg-primary-gold hover:text-text-primary transition-all shadow-premium">

@@ -14,7 +14,7 @@ export default function JoinWithUsPage() {
             <span className="inline-flex px-6 py-2 rounded-full border border-primary-gold/20 text-primary-gold text-[10px] font-bold uppercase tracking-[0.4em] mb-10 bg-dark-blue shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-1000">
                Elite Partnerships
             </span>
-            <h1 className="text-6xl md:text-9xl font-bold mb-10 tracking-tighter leading-none text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
+            <h1 className="font-bold mb-10 tracking-tighter leading-none text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
                GROW WITH <br />
                <span className="text-primary-gold italic font-heading">GK STAR</span>
             </h1>
@@ -39,7 +39,7 @@ export default function JoinWithUsPage() {
              { num: "24h", label: "Onboarding Speed" }
            ].map((stat, i) => (
              <div key={i} className="flex flex-col gap-2 group">
-                <span className="text-4xl md:text-7xl font-bold tracking-tighter text-text-secondary/10 group-hover:text-primary-gold/20 transition-colors duration-700">{stat.num}</span>
+                <span className="font-bold tracking-tighter text-text-secondary/10 group-hover:text-primary-gold/20 transition-colors duration-700 text-4xl md:text-5xl lg:text-6xl">{stat.num}</span>
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-text-secondary">{stat.label}</p>
              </div>
            ))}
@@ -51,7 +51,7 @@ export default function JoinWithUsPage() {
         <div className="container-custom">
           <div className="text-center mb-24">
              <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.3em] mb-4 block">The Advantage</span>
-             <h2 className="text-4xl md:text-7xl font-bold tracking-tighter text-text-primary font-heading">Elite Benefits</h2>
+             <h2 className="font-bold tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">Elite Benefits</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
@@ -79,7 +79,7 @@ export default function JoinWithUsPage() {
       <section className="section-padding bg-deep-dark border-y border-border-dark">
          <div className="container-custom">
             <div className="text-center mb-20">
-               <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-text-primary font-heading">The Journey</h2>
+               <h2 className="font-bold tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">The Journey</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
@@ -108,7 +108,7 @@ export default function JoinWithUsPage() {
             {/* Form Intro */}
             <div className="lg:w-2/5 bg-deep-dark p-12 md:p-20 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-border-dark">
                <div>
-                  <h3 className="text-4xl md:text-5xl font-bold tracking-tighter mb-10 leading-none text-text-primary font-heading">Request <br /> <span className="text-primary-gold italic font-heading">Onboarding</span></h3>
+                  <h3 className="font-bold tracking-tighter mb-10 leading-none text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">Request <br /> <span className="text-primary-gold italic font-heading">Onboarding</span></h3>
                   <p className="text-text-secondary font-medium leading-relaxed mb-12 opacity-80">
                      Submit your details below. Our elite partner relations team will contact you within 24 hours to begin the vetting process.
                   </p>

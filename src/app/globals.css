@@ -12,7 +12,7 @@
   --text-light: #FFFFFF;
   --bg-light: #f9f9f9;
 
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
   --background: oklch(0.24 0.05 260); /* equivalent to #0F172A */
   --foreground: oklch(1 0 0); /* #FFFFFF */
@@ -51,7 +51,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-heading: var(--font-playfair);
+  --font-heading: var(--font-poppins);
   --font-sans: var(--font-inter);
   --color-primary-gold: #FACC15;
   --color-neon-gold: #FACC15;

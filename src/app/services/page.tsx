@@ -96,7 +96,7 @@ export default function ServicesPage() {
             <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-text-secondary">Professional Expertise</span>
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-[1] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
+          <h1 className="font-bold mb-8 leading-[1] tracking-tighter text-text-primary font-heading animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100 text-4xl md:text-5xl lg:text-6xl">
             Our <span className="text-primary-gold italic font-heading">Premium</span> <br/>
             Services
           </h1>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
         <div className="container-custom">
           <div className="text-center mb-24">
             <span className="text-primary-gold font-bold uppercase tracking-[0.5em] text-[10px] mb-6 block">Our Commitment</span>
-            <h2 className="text-4xl md:text-7xl font-bold mb-8 tracking-tighter text-text-primary font-heading">
+            <h2 className="font-bold mb-8 tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">
               Quality Without <br/>
               <span className="text-text-secondary/30">Compromise</span>
             </h2>

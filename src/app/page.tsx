@@ -54,7 +54,7 @@ export default function Home() {
             <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-text-secondary">GK Star Multi Services</span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-[0.9] tracking-tighter text-text-primary drop-shadow-lg font-heading animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
+          <h1 className="font-bold mb-8 leading-[0.9] tracking-tighter text-text-primary drop-shadow-lg font-heading animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 text-4xl md:text-5xl lg:text-6xl">
             ELEGANCE IN <br />
             <span className="text-primary-gold italic font-heading drop-shadow-[0_0_25px_rgba(250,204,21,0.3)]">EVERY DETAIL</span>
           </h1>
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-10">
             <div className="max-w-xl">
               <span className="text-primary-gold text-[11px] font-bold uppercase tracking-[0.3em] mb-4 block">Our Specialties</span>
-              <h2 className="text-4xl md:text-7xl font-bold tracking-tighter leading-none text-text-primary font-heading">
+              <h2 className="font-bold tracking-tighter leading-none text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">
                 Experience <br /> <span className="text-text-secondary/50 font-light">The Exceptional</span>
               </h2>
             </div>
@@ -149,7 +149,7 @@ export default function Home() {
             { label: "Premium Support", value: "24/7" }
           ].map((stat, i) => (
             <div key={i} className="flex flex-col gap-3 group">
-               <span className="text-7xl md:text-8xl font-bold tracking-tighter text-border-dark group-hover:text-primary-gold/30 transition-colors duration-700 drop-shadow-sm">
+               <span className="font-bold tracking-tighter text-border-dark group-hover:text-primary-gold/30 transition-colors duration-700 drop-shadow-sm text-4xl md:text-5xl lg:text-6xl">
                  {stat.value}
                </span>
                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-text-secondary group-hover:text-primary-gold transition-colors">
@@ -168,7 +168,7 @@ export default function Home() {
             <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-primary-gold/5 group-hover:bg-primary-gold/10 transition-colors duration-700 rounded-full blur-[80px] -ml-40 -mb-40"></div>
             
             <div className="max-w-3xl mx-auto relative z-10">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-tighter text-text-primary font-heading">
+              <h2 className="font-bold mb-6 leading-tight tracking-tighter text-text-primary font-heading text-4xl md:text-5xl lg:text-6xl">
                 Ready to create something <br/>
                 <span className="text-primary-gold italic font-heading drop-shadow-[0_0_15px_rgba(250,204,21,0.3)]">Extraordinary?</span>
               </h2>

@@ -12,7 +12,7 @@ export default function DashboardStats() {
     <div className="space-y-12">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-3 text-foreground font-heading">
+          <h1 className="font-bold tracking-tighter mb-3 text-foreground font-heading text-4xl md:text-5xl lg:text-6xl">
             Dashboard <span className="text-primary-gold italic font-heading">Overview</span>
           </h1>
           <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-[0.4em] opacity-60">Performance Metrics • Real-time Data</p>
